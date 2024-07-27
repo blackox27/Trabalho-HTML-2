@@ -24,6 +24,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -44,9 +48,52 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+ul img {
+    display: block;
+    margin: 0.5rem 0;
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .about, .products, .contact {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
